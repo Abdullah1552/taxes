@@ -1,0 +1,145 @@
+/* Footer Component Styles */
+
+.site-footer {
+  border-top: 1px solid #f3f4f6;
+  position: relative;
+  width: 100%;
+}
+
+/* Logo styles */
+.footer-logo {
+  margin-bottom: 2.5rem;
+}
+
+.footer-logo svg {
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover svg {
+  transform: translateY(-3px);
+}
+
+/* Navigation columns */
+.footer-column h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.footer-column h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 40px;
+  height: 2px;
+  background-color: #e9d5ff;
+  transition: width 0.3s ease;
+}
+
+.footer-column:hover h3::after {
+  width: 100%;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.footer-column ul li:hover {
+  transform: translateX(4px);
+}
+
+/* Social icons */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Certification logos */
+.certification-logos img {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.certification-logos img:hover {
+  opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .footer-content {
+    text-align: center;
+  }
+  
+  .footer-column h3::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-column ul li:hover {
+    transform: none;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .footer-bottom {
+    padding-top: 1.5rem;
+  }
+  
+  .certification-logos {
+    margin-top: 1.5rem;
+  }
+}
+
+/* Link hover animation */
+.footer-column a,
+.contact-info a,
+.footer-links a {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-column a::after,
+.contact-info a::after,
+.footer-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #a855f7;
+  transition: width 0.3s ease;
+}
+
+.footer-column a:hover::after,
+.contact-info a:hover::after,
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* Special styles for mobile */
+@media (max-width: 640px) {
+  .footer-links {
+    margin-bottom: 2rem;
+  }
+  
+  .certification-logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .legal-info {
+    font-size: 0.65rem;
+    line-height: 1.4;
+  }
+} 
