@@ -73,7 +73,7 @@ export function Navbar() {
                 to="/"
                 className={`px-4 py-2 text-sm font-medium ${isActive('/') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
               >
-                HOME
+                Home
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem
