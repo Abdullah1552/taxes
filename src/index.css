@@ -7,6 +7,7 @@ body {
   
   /* font-family: "Poppins", sans-serif;  */
   font-family: "Outfit", sans-serif;
+  filter: grayscale(1);
 }
 
 @layer base {
@@ -131,6 +132,15 @@ body {
 
   .sm-pb-0 {
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .steps-badge{
+    display: none;
+  }
+  .steps-border{
+    border-right-width: 0px;
   }
 }
 
