@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ApplyForm.css';
+import { Link } from 'react-router-dom';
 
 export function ApplyForm() {
   // Form state
@@ -42,7 +43,6 @@ export function ApplyForm() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Here you would typically send the data to an API
     alert('Application submitted successfully!');
   };
 
@@ -162,13 +162,14 @@ export function ApplyForm() {
                     required
                   />
                 </div>
-
+                <Link to="/thanks">
                 <button
                   type="submit"
                   className="quote-btn w-full py-4 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition duration-300 font-medium"
                 >
                   Get your quote
                 </button>
+                </Link>
               </form>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import pageConfigs from "./PageConfig";
+import {pageConfigs} from "./PageConfig";
 import HeroSection from "@/components/HeroSection";
 
 const Hero: React.FC = () => {

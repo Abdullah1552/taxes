@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
+import ProductDropdown from "./DropDown";
 
 export function Navbar() {
   const location = useLocation();
@@ -50,12 +51,15 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-20 w-full  bg-white  shadow-md ">
       <div className=" flex items-center justify-between px-10 bg-black">
-        <div className="flex items-center py-6 ">
-          <Logo />
-        </div>
+        <Link
+          to="/" >
+          <div className="flex items-center py-6 ">
+            <Logo />
+          </div>
+        </Link>
 
         {/* Hamburger Menu Button (Mobile & Tablet) */}
-        <button 
+        <button
           className="flex lg:hidden flex-col justify-center items-center w-10 h-10 rounded-md focus:outline-none"
           onClick={toggleMenu}
           aria-label="Toggle menu"
@@ -66,75 +70,45 @@ export function Navbar() {
         </button>
 
         {/* Desktop Navigation (Large Screens) */}
-        <NavigationMenu className="block">
-          <NavigationMenuList className="flex">
-            <NavigationMenuItem>
-              <Link
-                to="/"
-                className={`px-4 py-2 text-sm font-medium ${isActive('/') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
-              >
-                Home
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem
-              className="relative"
-              onMouseEnter={() => handleMouseEnter('products')}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Link
-                to="/products"
-                className={`px-4 py-2 text-sm font-medium ${isActive('/products') || location.pathname === '/personal-loans' || location.pathname === '/business-loans' ? 'text-white' : 'text-gray-300'} hover:text-gray-300 flex items-center`}
-              >
-                Our Products
-                <svg 
-                  className="ml-1 h-4 w-4" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  viewBox="0 0 20 20" 
-                  fill="currentColor"
+        {!isMobileOrTablet &&
+          <NavigationMenu className="block">
+            <NavigationMenuList className="flex">
+              <NavigationMenuItem>
+                <Link
+                  to="/"
+                  className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
                 >
-                  <path 
-                    fillRule="evenodd" 
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                    clipRule="evenodd" 
-                  />
-                </svg>
-              </Link>
-              {activeDropdown === 'products' && (
-                <div 
-                  ref={el => dropdownRefs.current.products = el}
-                  className="absolute left-0 mt-2 bg-white rounded-md shadow-lg z-20 w-48 py-2"
+                  Home
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link
+                  to="/products"
+                  className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
                 >
-                  {productItems.map((item, index) => (
-                    <Link
-                      key={index}
-                      to={item.link}
-                      className={`block px-4 py-2 text-sm ${isActive(item.link) ? 'text-black bg-violet-50' : 'text-gray-700 hover:bg-violet-50 hover:text-violet-600'}`}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link
-                to="/about"
-                className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
-              >
-                Who We Are
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link
-                to="/partners"
-                className={`px-4 py-2 text-sm font-medium ${isActive('/partners') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
-              >
-                Partner With Us
-              </Link>
-            </NavigationMenuItem>
-          </NavigationMenuList>
-        </NavigationMenu>
-
+                  Products
+                </Link>
+              </NavigationMenuItem>
+              <ProductDropdown />
+              <NavigationMenuItem>
+                <Link
+                  to="/about"
+                  className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
+                >
+                  Who We Are
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link
+                  to="/partners"
+                  className={`px-4 py-2 text-sm font-medium ${isActive('/partners') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
+                >
+                  Partner With Us
+                </Link>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        }
         {/* Mobile & Tablet Navigation Menu */}
         {isMenuOpen && (
           <div className="absolute top-full left-0 right-0 bg-white shadow-lg lg:hidden z-30 py-4">
@@ -152,16 +126,16 @@ export function Navbar() {
                   onClick={() => setActiveDropdown(activeDropdown === 'mobileProducts' ? null : 'mobileProducts')}
                 >
                   Our Products
-                  <svg 
+                  <svg
                     className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === 'mobileProducts' ? 'rotate-180' : ''}`}
-                    xmlns="http://www.w3.org/2000/svg" 
-                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
                     fill="currentColor"
                   >
-                    <path 
-                      fillRule="evenodd" 
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" 
-                      clipRule="evenodd" 
+                    <path
+                      fillRule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clipRule="evenodd"
                     />
                   </svg>
                 </button>
@@ -216,7 +190,7 @@ export function Logo() {
   return (
     <div className="flex items-center text-2xl font-bold">
       {/* FINANCE<span className="relative mx-[-0.1rem] text-violet-500">🔗</span>LINK */}
-      <img src="/src/components/assets/finance-link-logo.png" style={{ width:"40%"}}/>
+      <img src="/src/components/assets/finance-link-logo.png" style={{ width: "40%" }} />
     </div>
   );
 }

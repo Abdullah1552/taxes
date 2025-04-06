@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 interface HeroSectionProps {
   head: string,
@@ -66,9 +67,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ head, titleShort, titleLong, 
                         />
                       </div>
                     </div>
-                    <button className="w-full rounded-full bg-black py-2 text-sm text-white">
-                      See Your Options
-                    </button>
+                    <Link to="/apply-now">
+                      <button className="w-full rounded-full bg-black py-2 text-sm text-white">
+                        See Your Options
+                      </button>
+                    </Link>
                   </div>
 
                   {/* Arrow - Updated to match reference */}

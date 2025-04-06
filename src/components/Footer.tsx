@@ -24,10 +24,10 @@ export function Footer() {
             <h3 className="text-xl font-bold mb-4">Float Me</h3>
             <ul className="space-y-2">
               <li><Link to="/about" className="text-gray-700 hover:text-purple-600 transition-colors">About Us</Link></li>
-              <li><Link to="/careers" className="text-gray-700 hover:text-purple-600 transition-colors">Careers</Link></li>
               <li><Link to="/partners" className="text-gray-700 hover:text-purple-600 transition-colors">Partner With Us</Link></li>
-              <li><Link to="/testimonials" className="text-gray-700 hover:text-purple-600 transition-colors">Testimonials</Link></li>
-              <li><Link to="/calculator" className="text-gray-700 hover:text-purple-600 transition-colors">Repayments Calculator</Link></li>
+              <li><Link to="/personal-loans" className="text-gray-700 hover:text-purple-600 transition-colors">Personal Loans</Link></li>
+              <li><Link to="/business-loans" className="text-gray-700 hover:text-purple-600 transition-colors">Business Loans</Link></li>
+              <li><Link to="/apply-now" className="text-gray-700 hover:text-purple-600 transition-colors">Apply Now</Link></li>
             </ul>
           </div>
 
@@ -40,7 +40,6 @@ export function Footer() {
               <li><Link to="/personal-loans/caravan" className="text-gray-700 hover:text-purple-600 transition-colors">Caravan Loans</Link></li>
               <li><Link to="/personal-loans/boat" className="text-gray-700 hover:text-purple-600 transition-colors">Boat Loans</Link></li>
               <li><Link to="/personal-loans/jetski" className="text-gray-700 hover:text-purple-600 transition-colors">Jet Ski Loans</Link></li>
-              <li><Link to="/personal-loans/personal" className="text-gray-700 hover:text-purple-600 transition-colors">Personal Loans</Link></li>
             </ul>
           </div>
 
@@ -48,12 +47,12 @@ export function Footer() {
           <div className="footer-column text-center md:text-left">
             <h3 className="text-xl font-bold mb-4">Business Loans</h3>
             <ul className="space-y-2">
-              <li><Link to="/business-loans/truck" className="text-gray-700 hover:text-purple-600 transition-colors">Truck Finance</Link></li>
-              <li><Link to="/business-loans/trailer" className="text-gray-700 hover:text-purple-600 transition-colors">Trailer Finance</Link></li>
-              <li><Link to="/business-loans/equipment" className="text-gray-700 hover:text-purple-600 transition-colors">Equipment Finance</Link></li>
-              <li><Link to="/business-loans/fit-out" className="text-gray-700 hover:text-purple-600 transition-colors">Commercial Fit Out Finance</Link></li>
-              <li><Link to="/business-loans/unsecured" className="text-gray-700 hover:text-purple-600 transition-colors">Unsecured Finance</Link></li>
-              <li><Link to="/business-loans/overdraft" className="text-gray-700 hover:text-purple-600 transition-colors">Business Overdraft</Link></li>
+              <li><Link to="/business-loans/Truck-finance" className="text-gray-700 hover:text-purple-600 transition-colors">Truck Finance</Link></li>
+              <li><Link to="/business-loans/Trailer-finance" className="text-gray-700 hover:text-purple-600 transition-colors">Trailer Finance</Link></li>
+              <li><Link to="/business-loans/Equipment-finance" className="text-gray-700 hover:text-purple-600 transition-colors">Equipment Finance</Link></li>
+              <li><Link to="/business-loans/Commercial-Fitout" className="text-gray-700 hover:text-purple-600 transition-colors">Commercial Fit Out Finance</Link></li>
+              <li><Link to="/business-loans/Unsecured-loan" className="text-gray-700 hover:text-purple-600 transition-colors">Unsecured Finance</Link></li>
+              <li><Link to="/business-loans/Business-Overdraft" className="text-gray-700 hover:text-purple-600 transition-colors">Business Overdraft</Link></li>
             </ul>
           </div>
         </div>
@@ -98,7 +97,7 @@ export function Footer() {
         {/* Bottom Links and Logos */}
         <div className="footer-bottom">
           <div className="footer-links flex flex-wrap justify-center gap-4 mb-6 text-sm">
-            <span className="text-gray-700">2022 Finance🔗Link. All Rights Reserved</span>
+            <span className="text-gray-700">2025 Finance🔗Link. All Rights Reserved</span>
             <span className="hidden md:inline text-gray-400">|</span>
             <Link to="/privacy" className="text-gray-700 hover:text-purple-600 transition-colors">Privacy Policy</Link>
             <span className="hidden md:inline text-gray-400">|</span>

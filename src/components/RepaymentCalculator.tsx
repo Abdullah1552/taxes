@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './RepaymentCalculator.css';
 import Calculator from "./assets/Calculator.avif"
+import { Link } from 'react-router-dom';
 
 export function RepaymentCalculator() {
   const [loanAmount, setLoanAmount] = useState<number>(30000);
@@ -221,9 +222,11 @@ export function RepaymentCalculator() {
                 <div className="repayment-amount text-4xl font-bold text-gray-600 mb-6">
                   $ {monthlyRepayment.toFixed(2)}
                 </div>
+                <Link to="/apply-now">
                 <button className="apply-btn w-full py-4 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition duration-300 font-medium">
                   Apply Now
                 </button>
+                </Link>
               </div>
               
               <div className="disclaimer text-xs text-gray-500 mt-4">

@@ -16,6 +16,7 @@ import Hero from "./Pages/Hero";
 import { Stepper } from "./components/Stepper";
 import { WhoAreWe } from "./components/WhoAreWe";
 import LoanDetail from "./components/LoanDetail";
+import Loan from "./Pages/Loan";
 
 function App() {
   return (
@@ -77,12 +78,18 @@ function App() {
             <Route
               path="/business-loans"
               element={
-                <div className="container mx-auto py-12">
-                  <h1 className="text-3xl font-bold">Business Loans</h1>
-                  <p className="mt-4">
-                    Grow your business with our flexible business financing solutions.
-                  </p>
-                </div>
+                <>
+                  <Hero />
+                  <FeatureIconsSection />
+                  <WhyLoveFloatMe />
+                  <LoanDivisions />
+                  <SimplePhilosophy />
+                  <Stepper />
+                  <Testimonials />
+                  <RepaymentCalculator />
+                  <LenderPartners />
+                  <ApplyForm />
+                </>
               }
             />
 
@@ -124,6 +131,23 @@ function App() {
                   <FloatMeWay />
                   <Stepper />
                   <LenderPartners />
+                </>
+              }
+            />
+            <Route
+              path="/apply-now"
+              element={
+                <>
+                  <ApplyForm />
+                  <RepaymentCalculator />
+                </>
+              }
+            />
+            <Route
+              path="/thanks"
+              element={
+                <>
+                  <Loan/>
                 </>
               }
             />

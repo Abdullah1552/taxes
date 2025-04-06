@@ -1,7 +1,15 @@
 import "./SimplePhilosophy.css";
 import PhoneWIthTick from "./assets/Phone with tick.avif"
 
-export function SimplePhilosophy() {
+interface LoanBenefitsProps {
+    titleShort: string;
+    titleLong: string;
+    textF: string;
+    textL: string;
+    images: string;
+}
+
+export const LoanBenefits: React.FC<LoanBenefitsProps> = ({ titleShort,titleLong, textF, textL, images }) => {
   return (
     <section className="overflow-hidden bg-gradient-to-br from-violet-50 to-white py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-8">
@@ -11,7 +19,7 @@ export function SimplePhilosophy() {
             <div className="phone-shadow relative mx-auto max-w-xs md:max-w-sm">
               {/* Phone Frame */}
               <div className="phone-frame relative z-10 rotate-3 transform transition-transform duration-500 hover:rotate-0">
-              <img src={PhoneWIthTick} alt="Phone with Tick" className="w-full h-full"/>
+              <img src={images} alt="Phone with Tick" className="w-full h-full"/>
               </div>
             </div>
           </div>
@@ -20,27 +28,20 @@ export function SimplePhilosophy() {
           <div className="w-full lg:w-1/2">
             <div className="text-content">
               <h2 className="mb-2 text-3xl font-bold md:text-4xl">
-                At <span className="inline-flex items-center">Finance🔗Link</span>
+                {titleShort}
               </h2>
 
               <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-                we empower your financial <br />
-                future with ease.
+               {titleLong}
               </h2>
 
               <div className="space-y-6 text-gray-700">
                 <p>
-                  Finance Link Australia is here to simplify your financial journey. With tailored
-                  solutions and expert guidance, we help you achieve your financial goals
-                  confidently.
+                  {textF}
                 </p>
 
                 <p>
-                  Our goal is to help you focus on what truly matters – getting things done! We’ll
-                  work diligently to find the ideal solution, customized specifically for you by one
-                  of Australia’s skilled financial experts. We understand how valuable your time is,
-                  especially when managing kids in school, household tasks, and those never-ending
-                  bills.
+                 {textL}
                 </p>
               </div>
             </div>
@@ -53,4 +54,3 @@ export function SimplePhilosophy() {
   );
 }
 
-export default SimplePhilosophy;

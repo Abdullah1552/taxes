@@ -1,18 +1,20 @@
 import { useParams } from "react-router-dom";
 import { personalLoanOptions, businessLoanOptions } from "@/Static/LoanOptions";
 import Hero from "@/Pages/Hero";
+import { FeatureIconsSection } from "./FeatureIconsSection";
+import FloatMeWay from "./FloatMeWay";
+import WhyLoveFloatMe from "./WhyLoveFloatMe";
+import { LoanDivisions } from "./LoanDivisions";
+import { Testimonials } from "./Testimonials";
+import { RepaymentCalculator } from "./RepaymentCalculator";
+import { LenderPartners } from "./LenderPartners";
+import { ApplyForm } from "./ApplyForm";
+import Loan from "@/Pages/Loan";
 
 const LoanDetail: React.FC<{ loanType: string }> = ({ loanType }) => {
-    // Capture loanId from the URL parameters
     const { loanId } = useParams<{ loanId: string }>();
-
-    console.log("loanType:", loanType);  // Will be passed as "personal" or "business"
-    console.log("loanId:", loanId);      // Will be "car", "bike", etc.
-
-    // Depending on loanType, select the appropriate loan options
+    console.log("loanType:", loanType);
     const loanOptions = loanType === "personal" ? personalLoanOptions : businessLoanOptions;
-
-    // Find the loan based on loanId
     const loan = loanOptions.find((option) => option?.id === loanId);
     console.log("loan", loan);
 
@@ -23,10 +25,14 @@ const LoanDetail: React.FC<{ loanType: string }> = ({ loanType }) => {
     return (
         <>
             <Hero />
-            <div className="container mx-auto py-12">
-                <h1 className="text-3xl font-bold">{loan.title}</h1>
-                <p>{loan.description}</p>
-            </div>
+            <FeatureIconsSection />
+            <FloatMeWay />
+            <Loan/>
+            <LoanDivisions />
+            <Testimonials />
+            <RepaymentCalculator />
+            <LenderPartners />
+            <ApplyForm />
         </>
     );
 };
