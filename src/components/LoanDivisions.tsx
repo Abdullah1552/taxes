@@ -14,6 +14,7 @@ export function LoanDivisions() {
   const displayOptions = activeTab === "personal" ? personalLoanOptions : businessLoanOptions;
 
   const handleTabChange = (tab: string) => {
+    if (tab === activeTab) return;
     setAnimate(false);
     setTimeout(() => {
       setActiveTab(tab);

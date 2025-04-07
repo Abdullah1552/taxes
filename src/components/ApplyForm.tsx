@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './ApplyForm.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export function ApplyForm() {
-  // Form state
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -42,8 +43,16 @@ export function ApplyForm() {
   // Handle form submission
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Application submitted successfully!');
+  
+    // Add any extra validation if needed
+    const allFieldsFilled = Object.values(formData).every((field) => field.trim() !== "");
+  
+    if (allFieldsFilled) {
+      // do something with the form data (like send to backend)
+      navigate("/thanks"); // ✅ only navigate if form is valid
+    } else {
+      alert("Please fill out all fields correctly."); // optional UX alert
+    }
   };
 
   return (
@@ -162,14 +171,12 @@ export function ApplyForm() {
                     required
                   />
                 </div>
-                <Link to="/thanks">
                 <button
                   type="submit"
                   className="quote-btn w-full py-4 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition duration-300 font-medium"
                 >
                   Get your quote
                 </button>
-                </Link>
               </form>
             </div>
           </div>
