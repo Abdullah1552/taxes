@@ -56,7 +56,7 @@ export function ApplyForm() {
   };
 
   return (
-    <section className="apply-form-section py-16 md:py-24">
+    <section className="apply-form-section py-16 md:py-24 grayscale">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
 

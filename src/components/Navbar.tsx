@@ -82,12 +82,6 @@ export function Navbar() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link
-                  to="/products"
-                  className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
-                >
-                  Products
-                </Link>
               </NavigationMenuItem>
               <ProductDropdown />
               <NavigationMenuItem>
@@ -118,14 +112,14 @@ export function Navbar() {
                 className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/') ? 'text-violet-600 bg-gray-50' : 'text-gray-900 hover:text-violet-600 hover:bg-gray-50'}`}
                 onClick={toggleMenu}
               >
-                HOME
+                Home
               </Link>
               <div className="w-full">
                 <button
                   className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/products') || location.pathname === '/personal-loans' || location.pathname === '/business-loans' ? 'text-violet-600 bg-gray-50' : 'text-gray-900 hover:text-violet-600 hover:bg-gray-50'} flex items-center justify-center`}
                   onClick={() => setActiveDropdown(activeDropdown === 'mobileProducts' ? null : 'mobileProducts')}
                 >
-                  Our Products
+                  Our Services
                   <svg
                     className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === 'mobileProducts' ? 'rotate-180' : ''}`}
                     xmlns="http://www.w3.org/2000/svg"
@@ -169,9 +163,11 @@ export function Navbar() {
                 Partner With Us
               </Link>
               <div className="mt-4 w-full px-4">
+                <Link to="/apply-now">
                 <Button className="w-full rounded-full bg-violet-500 px-6 py-2 text-white hover:bg-violet-600">
                   Apply Now
                 </Button>
+                </Link>
               </div>
             </nav>
           </div>

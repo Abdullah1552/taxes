@@ -21,6 +21,7 @@
 
 /* Arrow animation */
 .arrow-animation {
+  display: none;
   position: absolute;
   top: -30px;
   right: 20px;

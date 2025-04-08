@@ -1,9 +1,10 @@
 import "./SimplePhilosophy.css";
-import PhoneWIthTick from "./assets/Phone with tick.avif"
+import PhoneWIthTick from "./assets/scripts1.png"
 
 export function SimplePhilosophy() {
   return (
-    <section className="overflow-hidden bg-gradient-to-br from-violet-50 to-white py-16 md:py-24">
+    <section className="overflow-hidden bg-gradient-to-br from-gray-200 to-white py-16 md:py-24
+">
       <div className="container mx-auto px-4 md:px-8">
         <div className="mx-auto flex max-w-6xl flex-col items-center gap-12 lg:flex-row lg:items-start lg:gap-16">
           {/* Left Column - 3D Phone Illustration */}

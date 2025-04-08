@@ -55,7 +55,9 @@ export function LoanDivisions() {
               key={option.id}
               className="loan-option flex flex-col items-center rounded-lg bg-gray-500 bg-opacity-10 p-6"
             >
-              <div className="loan-icon mb-4 h-20 w-20">{option.icon}</div>
+              <div style={{filter:"invert(1)"}} className="loan-icon mb-4 h-20 w-20">
+                <img src={option.icon} alt={`${option.title} icon`} className="h-full w-full object-contain" />
+              </div>
               <h3 className="mb-2 text-center text-xl font-semibold text-white">{option.title}</h3>
               <p className="loan-description mb-4 text-center text-sm text-white">
                 {option.description}

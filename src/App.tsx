@@ -17,10 +17,13 @@ import { Stepper } from "./components/Stepper";
 import { WhoAreWe } from "./components/WhoAreWe";
 import LoanDetail from "./components/LoanDetail";
 import Loan from "./Pages/Loan";
+import { Process } from "./components/Process";
+import ScrollToTop from "./Utility/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop/>
       <div className="relative min-h-screen">
         <Navbar />
         <main>
@@ -30,12 +33,13 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <FeatureIconsSection />
+                  <Process/>
                   <FloatMeWay />
                   <SimplePhilosophy />
                   <WhyLoveFloatMe />
                   <LoanDivisions />
                   <Testimonials />
+                  <Stepper/>
                   <RepaymentCalculator />
                   <LenderPartners />
                   <ApplyForm />
@@ -47,7 +51,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <FeatureIconsSection />
+                  <Process/>
                   <WhyLoveFloatMe />
                   <LoanDivisions />
                   <SimplePhilosophy />
@@ -63,7 +67,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <FeatureIconsSection />
+                  <Process/>
                   <WhyLoveFloatMe />
                   <LoanDivisions />
                   <SimplePhilosophy />
@@ -80,7 +84,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <FeatureIconsSection />
+                  <Process/>
                   <WhyLoveFloatMe />
                   <LoanDivisions />
                   <SimplePhilosophy />
@@ -110,7 +114,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <FeatureIconsSection />
+                  <Process/>
                   <WhoAreWe />
                   <WhyLoveFloatMe />
                   <LoanDivisions />

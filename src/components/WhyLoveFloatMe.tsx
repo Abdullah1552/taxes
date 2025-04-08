@@ -3,7 +3,7 @@ import "./WhyLoveFloatMe.css";
 
 export function WhyLoveFloatMe() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-white to-violet-50 overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-200 to-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-8">
         {/* Heading */}
         <div className="text-center mb-16 md:mb-20">

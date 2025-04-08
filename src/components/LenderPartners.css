@@ -6,7 +6,6 @@
   position: relative;
   overflow: hidden;
   color: white;
-  filter: grayscale(1);
 }
 
 /* Logo carousel styles */
@@ -17,7 +16,6 @@
 }
 
 .partner-logos-wrapper {
-  filter: grayscale(1);
   width: 100%;
   overflow: hidden;
 }

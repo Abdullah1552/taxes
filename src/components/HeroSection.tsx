@@ -31,28 +31,28 @@ const HeroSection: React.FC<HeroSectionProps> = ({ head, titleShort, titleLong, 
           </div>
 
           <div className="relative flex items-center justify-center">
-            <div className="hold-phone relative h-[100vh] w-[50vw]">
+            <div className="relative h-[50vh] w-[90vw] sm:h-[70vh] sm:w-[50vw] lg:h-[80vh] lg:w-[40vw]">
               {/* The hand image is used as the base */}
               <div
                 className="hand-bg absolute inset-0 bg-contain bg-center bg-no-repeat"
                 style={{
                   backgroundImage: `url(${image[0]})`,
-                  backgroundSize: "55vw",
+                  backgroundSize: "120% 120%",
                 }}
               ></div>
 
               {/* Phone content overlay */}
               {overlay &&
-                <div className="absolute left-[72px] top-[40px] flex h-[50vh] w-[21vw] flex-col items-center card-hero">
+                <div className="absolute left-[32%] top-[-20%] flex h-[60%] w-[60%] flex-col items-center card-hero sm:left-[20%] sm:top-[-3%] sm:w-[60%] lg:left-[20%] lg:top-[5%] lg:w-[50%]">
                   {/* Logo Section */}
                   <div className="mb-4 w-full pt-14 text-center">
-                    <h2 className="sm-d-none text-2xl font-bold tracking-wider">
+                    <h2 className="hidden sm:hidden md:block text-2xl font-bold tracking-wider">
                       Finance🔗Link
                     </h2>
                   </div>
 
                   {/* Card Section */}
-                  <div className="sm-card-sec mb-10 w-[220px] rounded-xl bg-white p-5 shadow-2xl">
+                  <div className="sm-card-sec mb-10 w-[90%] m:w-[80%] rounded-xl bg-white p-5 shadow-2xl">
                     <h3 className="mb-3 text-lg font-bold">Let's get started</h3>
                     <div className="mb-3">
                       <p className="mb-1 text-xs">How much do you want to borrow?</p>
@@ -75,7 +75,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ head, titleShort, titleLong, 
                   </div>
 
                   {/* Arrow - Updated to match reference */}
-                  <div className="sm-d-none relative mb-2">
+                  <div className="sm-d-none relative mb-2 hidden">
                     {/* The left-pointing arrow from first image */}
                     <svg
                       fill="currentColor"
@@ -97,7 +97,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ head, titleShort, titleLong, 
                   </div>
 
                   {/* Bottom Text - Updated to match reference */}
-                  <div className="sm-d-none mt-20 text-center arrow-txt">
+                  <div className="sm-d-none mt-20 text-center arrow-txt hidden">
                     <p className="text-lg font-bold tracking-tight text-black">
                       START YOUR NO
                       <br />

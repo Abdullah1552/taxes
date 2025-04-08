@@ -1,19 +1,28 @@
 import React from 'react';
 import './LenderPartners.css';
-
+import lender1 from "./assets/lender/lender1.png"
+import lender2 from "./assets/lender/lender2.png"
+import lender3 from "./assets/lender/lender3.png"
+import lender4 from "./assets/lender/lender4.png"
+import lender5 from "./assets/lender/lender5.jpg"
+import lender6 from "./assets/lender/lender6.png"
+import lender7 from "./assets/lender/lender7.png"
+import lender8 from "./assets/lender/lender8.jpg"
+import lender9 from "./assets/lender/lender9.jpg"
+import lender10 from "./assets/lender/lender10.png"
 export function LenderPartners() {
   // Define our lending partners
   const lenders = [
-    { name: "Suncorp", logo: "/lender-logos/suncorp.png" },
-    { name: "Grow", logo: "/lender-logos/grow.png" },
-    { name: "Flexi Commercial", logo: "/lender-logos/flexi-commercial.png" },
-    { name: "Firstmac", logo: "/lender-logos/firstmac.png" },
-    { name: "Finance One", logo: "/lender-logos/finance-one.png" },
-    { name: "Early Pay", logo: "/lender-logos/earlypay.png" },
-    { name: "Commonwealth Bank", logo: "/lender-logos/commonwealth.png" },
-    { name: "Capital Finance", logo: "/lender-logos/capital-finance.png" },
-    { name: "Branded Financial", logo: "/lender-logos/branded-financial.png" },
-    { name: "BOQ", logo: "/lender-logos/boq.png" }
+    { name: "Pepper Money", logo: lender1 },
+    { name: "Grow", logo: lender2 },
+    { name: "Flexi Commercial", logo: lender3 },
+    { name: "Firstmac", logo: lender4 },
+    { name: "Finance One", logo: lender5 },
+    { name: "Early Pay", logo: lender6 },
+    { name: "Commonwealth Bank", logo: lender7 },
+    { name: "Capital Finance", logo: lender8 },
+    { name: "Branded Financial", logo:lender9 },
+    { name: "BOQ", logo: lender10 }
   ];
 
   // Handle image error by replacing with a placeholder

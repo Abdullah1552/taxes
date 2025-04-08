@@ -25,6 +25,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li><Link to="/about" className="text-gray-700 hover:text-purple-600 transition-colors">About Us</Link></li>
               <li><Link to="/partners" className="text-gray-700 hover:text-purple-600 transition-colors">Partner With Us</Link></li>
+              <li><Link to="/products" className="text-gray-700 hover:text-purple-600 transition-colors">Our Services</Link></li>
               <li><Link to="/personal-loans" className="text-gray-700 hover:text-purple-600 transition-colors">Personal Loans</Link></li>
               <li><Link to="/business-loans" className="text-gray-700 hover:text-purple-600 transition-colors">Business Loans</Link></li>
               <li><Link to="/apply-now" className="text-gray-700 hover:text-purple-600 transition-colors">Apply Now</Link></li>
@@ -40,6 +41,8 @@ export function Footer() {
               <li><Link to="/personal-loans/caravan" className="text-gray-700 hover:text-purple-600 transition-colors">Caravan Loans</Link></li>
               <li><Link to="/personal-loans/boat" className="text-gray-700 hover:text-purple-600 transition-colors">Boat Loans</Link></li>
               <li><Link to="/personal-loans/jetski" className="text-gray-700 hover:text-purple-600 transition-colors">Jet Ski Loans</Link></li>
+              <li><Link to="/personal-loans/wedding" className="text-gray-700 hover:text-purple-600 transition-colors">Wedding Loans</Link></li>
+              <li><Link to="/personal-loans/holiday" className="text-gray-700 hover:text-purple-600 transition-colors">Holiday Loans</Link></li>
             </ul>
           </div>
 
@@ -89,8 +92,7 @@ export function Footer() {
         {/* Legal Information */}
         <div className="legal-info text-xs text-gray-500 mb-8 text-center">
           <p className="mb-4">
-            Finance🔗Link Pty Ltd ATF The Trustee for Float Investment Trust (Brisbane, Queensland, 4000, Australia) trading as Float Me is an 
-            authorised credit representative (ACR # 542402) of Fintegration Pty Ltd (Australian Credit Licence #511803).
+          Finance Link Australia is committed to empowering your financial future. As an authorised credit representative of Fintelligence, we simplify your financial journey by offering expert-backed, transparent, and tailored finance solutions.
           </p>
         </div>
 
@@ -99,7 +101,7 @@ export function Footer() {
           <div className="footer-links flex flex-wrap justify-center gap-4 mb-6 text-sm">
             <span className="text-gray-700">2025 Finance🔗Link. All Rights Reserved</span>
             <span className="hidden md:inline text-gray-400">|</span>
-            <Link to="/privacy" className="text-gray-700 hover:text-purple-600 transition-colors">Privacy Policy</Link>
+            {/* <Link to="/privacy" className="text-gray-700 hover:text-purple-600 transition-colors">Privacy Policy</Link>
             <span className="hidden md:inline text-gray-400">|</span>
             <Link to="/complaints" className="text-gray-700 hover:text-purple-600 transition-colors">Compliments & Concerns</Link>
             <span className="hidden md:inline text-gray-400">|</span>
@@ -107,7 +109,7 @@ export function Footer() {
             <span className="hidden md:inline text-gray-400">|</span>
             <Link to="/credit-guide" className="text-gray-700 hover:text-purple-600 transition-colors">Credit Guide</Link>
             <span className="hidden md:inline text-gray-400">|</span>
-            <Link to="/complaints-policy" className="text-gray-700 hover:text-purple-600 transition-colors">Complaints Policy</Link>
+            <Link to="/complaints-policy" className="text-gray-700 hover:text-purple-600 transition-colors">Complaints Policy</Link> */}
           </div>
 
           <div className="footer-certification flex flex-col items-center">

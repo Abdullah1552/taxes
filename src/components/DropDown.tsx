@@ -23,7 +23,7 @@ const ProductDropdown = () => {
         onClick={() => setOpen((prev) => !prev)}
         className="px-4 py-2 text-sm font-medium text-gray-300 hover:text-gray-300 flex items-center focus:outline-none"
       >
-        Loans
+        Our Services
         <svg
           className="ml-1 h-4 w-4"
           xmlns="http://www.w3.org/2000/svg"

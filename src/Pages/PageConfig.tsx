@@ -1,4 +1,4 @@
-import HnadHoldingPhone from "../components/assets/Hand-holding-phone.avif"
+import HnadHoldingPhone from "../components/assets/Hand-holding-phone2.webp"
 import AboutMain from "../components/assets/about-bg1.webp"
 import Partners from "../components/assets/partners1.png"
 import PersonalLoans from "../components/assets/PL1.avif"
