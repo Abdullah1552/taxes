@@ -19,6 +19,7 @@ import LoanDetail from "./components/LoanDetail";
 import Loan from "./Pages/Loan";
 import { Process } from "./components/Process";
 import ScrollToTop from "./Utility/ScrollToTop";
+import { LegalButtons } from "./components/Legal";
 
 function App() {
   return (
@@ -152,6 +153,15 @@ function App() {
               element={
                 <>
                   <Loan/>
+                </>
+              }
+            />
+            <Route
+              path="/legal"
+              element={
+                <>
+                  <Loan/>
+                  <LegalButtons/>
                 </>
               }
             />

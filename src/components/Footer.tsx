@@ -26,6 +26,7 @@ export function Footer() {
               <li><Link to="/about" className="text-gray-700 hover:text-purple-600 transition-colors">About Us</Link></li>
               <li><Link to="/partners" className="text-gray-700 hover:text-purple-600 transition-colors">Partner With Us</Link></li>
               <li><Link to="/products" className="text-gray-700 hover:text-purple-600 transition-colors">Our Services</Link></li>
+              <li><Link to="/legal" className="text-gray-700 hover:text-purple-600 transition-colors">Legal</Link></li>
               <li><Link to="/personal-loans" className="text-gray-700 hover:text-purple-600 transition-colors">Personal Loans</Link></li>
               <li><Link to="/business-loans" className="text-gray-700 hover:text-purple-600 transition-colors">Business Loans</Link></li>
               <li><Link to="/apply-now" className="text-gray-700 hover:text-purple-600 transition-colors">Apply Now</Link></li>
@@ -101,15 +102,11 @@ export function Footer() {
           <div className="footer-links flex flex-wrap justify-center gap-4 mb-6 text-sm">
             <span className="text-gray-700">2025 Finance🔗Link. All Rights Reserved</span>
             <span className="hidden md:inline text-gray-400">|</span>
-            {/* <Link to="/privacy" className="text-gray-700 hover:text-purple-600 transition-colors">Privacy Policy</Link>
+            <Link to="https://fintelligence.com.au/privacy-policy/" className="text-gray-700 hover:text-purple-600 transition-colors">Privacy Policy</Link>
             <span className="hidden md:inline text-gray-400">|</span>
-            <Link to="/complaints" className="text-gray-700 hover:text-purple-600 transition-colors">Compliments & Concerns</Link>
+            <Link to="https://static1.squarespace.com/static/6491303c412377594c5b04bc/t/656d29db9dbd5452e869e255/1701652956251/Credit+Guide.pdf" className="text-gray-700 hover:text-purple-600 transition-colors">Credit Guide</Link>
             <span className="hidden md:inline text-gray-400">|</span>
-            <Link to="/hardship" className="text-gray-700 hover:text-purple-600 transition-colors">Hardship</Link>
-            <span className="hidden md:inline text-gray-400">|</span>
-            <Link to="/credit-guide" className="text-gray-700 hover:text-purple-600 transition-colors">Credit Guide</Link>
-            <span className="hidden md:inline text-gray-400">|</span>
-            <Link to="/complaints-policy" className="text-gray-700 hover:text-purple-600 transition-colors">Complaints Policy</Link> */}
+            <Link to="https://fintelligence.com.au/wp-content/uploads/2020/11/Complaint-Handling-Policy-Fintelligence_24112020.pdf" className="text-gray-700 hover:text-purple-600 transition-colors">Complaints Policy</Link>
           </div>
 
           <div className="footer-certification flex flex-col items-center">

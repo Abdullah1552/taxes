@@ -15,6 +15,7 @@ import Com from "../components/assets/equip.webp"
 import Loan from "../components/assets/loan4.webp"
 import Business from "../components/assets/business.webp"
 import Thanks from "../components/assets/thanks.avif"
+import legal from "../components/assets/legal.webp"
 interface PageConfig {
     head: string
     titleShort: string;
@@ -221,12 +222,20 @@ export const pageConfigs: Record<string, PageConfig> = {
 };
 
 export const loanConfigs: Record<string, LoanConfig> = {
-    "/thanks":{
+    "/thanks": {
         titleShort: "Finance🔗Link",
         titleLong: "THANK YOU!",
         images: Thanks,
         textF: "Thank you for reaching out to us! We appreciate your message and will respond as soon as possible. If there is anything urgent that requires immediate attention, please don't hesitate to let us know. We look forward to connecting with you soon and discussing how we can work together.",
-        textL:""
+        textL: ""
+    },
+    "/legal": {
+        titleShort: "Finance🔗Link",
+        titleLong: "Legal Information",
+        images: legal,
+        textF: `𝗔𝘁 𝗙𝗶𝗻𝗮𝗻𝗰𝗲🔗𝗟𝗶𝗻𝗸, we take your privacy seriously and are committed to protecting your personal data. This Legal section outlines our 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗼𝗹𝗶𝗰𝘆, 𝗧𝗲𝗿𝗺𝘀 & 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻𝘀, and important disclaimers related to the use of our services. Please read the information below carefully to understand your rights and our responsibilities. 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗼𝗹𝗶𝗰𝘆. 𝗧𝗲𝗿𝗺𝘀 & 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻𝘀. 𝗖𝗿𝗲𝗱𝗶𝘁 𝗚𝘂𝗶𝗱𝗲. Finance🔗Link reserves the right to update or modify terms at any time without prior notice. It is your responsibility to review our terms periodically.`,
+        textL: `𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗨𝘀 For legal inquiries, data access requests, or anything related to privacy and compliance, please email us at Enquiries@finacelinkaustralia.com.au. Last Updated: April 2025
+  `
     },
     "/personal-loans/car": {
         titleShort: "Drive away with",
@@ -304,7 +313,7 @@ export const loanConfigs: Record<string, LoanConfig> = {
         titleLong: "affordable equipment financing!",
         textF: "Upgrade your business tools and machinery with flexible financing. Get fast access to the equipment you need to run and grow your business.",
         textL: "From construction equipment to office machinery, we offer competitive rates on loans to keep your business equipped and efficient.",
-        images: Wed, 
+        images: Wed,
     },
 
     "/business-loans/Commercial-Fitout": {
@@ -328,7 +337,7 @@ export const loanConfigs: Record<string, LoanConfig> = {
         titleLong: "a business overdraft solution!",
         textF: "Keep your business running smoothly with a business overdraft. Access funds instantly and manage cash flow efficiently.",
         textL: "Our business overdraft facility allows you to tap into additional funds whenever you need them, without any complex processes.",
-        images: Business, 
+        images: Business,
     },
 
 
