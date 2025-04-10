@@ -1,170 +1,50 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import { FeatureIconsSection } from "./components/FeatureIconsSection";
 import { QuoteButton } from "./components/QuoteButton";
-import { FloatMeWay } from "./components/FloatMeWay";
-import { SimplePhilosophy } from "./components/SimplePhilosophy";
-import { WhyLoveFloatMe } from "./components/WhyLoveFloatMe";
-import { LoanDivisions } from "./components/LoanDivisions";
-import { Testimonials } from "./components/Testimonials";
-import { RepaymentCalculator } from "./components/RepaymentCalculator";
-import { LenderPartners } from "./components/LenderPartners";
-import { ApplyForm } from "./components/ApplyForm";
 import { Footer } from "./components/Footer";
-import Hero from "./Pages/Hero";
-import { Stepper } from "./components/Stepper";
-import { WhoAreWe } from "./components/WhoAreWe";
 import LoanDetail from "./components/LoanDetail";
 import Loan from "./Pages/Loan";
-import { Process } from "./components/Process";
 import ScrollToTop from "./Utility/ScrollToTop";
 import { LegalButtons } from "./components/Legal";
+import { PageLayout } from "./Pages/PageLayout";
 
 function App() {
   return (
     <Router>
-      <ScrollToTop/>
+      <ScrollToTop />
       <div className="relative min-h-screen">
         <Navbar />
         <main>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero />
-                  <Process/>
-                  <FloatMeWay />
-                  <SimplePhilosophy />
-                  <WhyLoveFloatMe />
-                  <LoanDivisions />
-                  <Testimonials />
-                  <Stepper/>
-                  <RepaymentCalculator />
-                  <LenderPartners />
-                  <ApplyForm />
-                </>
-              }
-            />
-            <Route
-              path="/products"
-              element={
-                <>
-                  <Hero />
-                  <Process/>
-                  <WhyLoveFloatMe />
-                  <LoanDivisions />
-                  <SimplePhilosophy />
-                  <Stepper />
-                  <RepaymentCalculator />
-                  <LenderPartners />
-                  <ApplyForm />
-                </>
-              }
-            />
-            <Route
-              path="/personal-loans"
-              element={
-                <>
-                  <Hero />
-                  <Process/>
-                  <WhyLoveFloatMe />
-                  <LoanDivisions />
-                  <SimplePhilosophy />
-                  <Stepper />
-                  <Testimonials />
-                  <RepaymentCalculator />
-                  <LenderPartners />
-                  <ApplyForm />
-                </>
-              }
-            />
-            <Route
-              path="/business-loans"
-              element={
-                <>
-                  <Hero />
-                  <Process/>
-                  <WhyLoveFloatMe />
-                  <LoanDivisions />
-                  <SimplePhilosophy />
-                  <Stepper />
-                  <Testimonials />
-                  <RepaymentCalculator />
-                  <LenderPartners />
-                  <ApplyForm />
-                </>
-              }
-            />
-
-            {/* Personal Loan Type Routes */}
-            <Route
-              path="/personal-loans/:loanId"
-              element={<LoanDetail loanType="personal" />}
-            />
-
-            {/* Business Loan Type Routes */}
-            <Route
-              path="/business-loans/:loanId"
-              element={<LoanDetail loanType="business" />}
-            />
-
-            <Route
-              path="/about"
-              element={
-                <>
-                  <Hero />
-                  <Process/>
-                  <WhoAreWe />
-                  <WhyLoveFloatMe />
-                  <LoanDivisions />
-                  <FloatMeWay />
-                  <Stepper />
-                  <RepaymentCalculator />
-                  <LenderPartners />
-                  <ApplyForm />
-                </>
-              }
-            />
+            <Route path="/" element={<PageLayout showTestimonials />} />
+            <Route path="/products" element={<PageLayout />} />
+            <Route path="/personal-loans" element={<PageLayout showTestimonials />} />
+            <Route path="/business-loans" element={<PageLayout showTestimonials />} />
+            <Route path="/about" element={<PageLayout showWhoAreWe showFloatMeWay />} />
             <Route
               path="/partners"
               element={
-                <>
-                  <Hero />
-                  <WhoAreWe />
-                  <FloatMeWay />
-                  <Stepper />
-                  <LenderPartners />
-                </>
+                <PageLayout
+                  showProcess={false}
+                  showWhyLove={false}
+                  showLoanDivisions={false}
+                  showPhilosophy={false}
+                  showApplyForm={false}
+                  showCalculator={false}
+                  showWhoAreWe
+                  showFloatMeWay
+                />
               }
             />
             <Route
               path="/apply-now"
-              element={
-                <>
-                  <ApplyForm />
-                  <RepaymentCalculator />
-                </>
-              }
+              element={<PageLayout showHero={false} showProcess={false} showWhyLove={false} showLoanDivisions={false} showPhilosophy={false} showFAQ={false} showStepper={false} showTestimonials={false} showLenders={false} />}
+            // only ApplyForm + Calculator
             />
-            <Route
-              path="/thanks"
-              element={
-                <>
-                  <Loan/>
-                </>
-              }
-            />
-            <Route
-              path="/legal"
-              element={
-                <>
-                  <Loan/>
-                  <LegalButtons/>
-                </>
-              }
-            />
+            <Route path="/thanks" element={<Loan />} />
+            <Route path="/legal" element={<><Loan /><LegalButtons /></>} />
+            <Route path="/personal-loans/:loanId" element={<LoanDetail loanType="personal" />} />
+            <Route path="/business-loans/:loanId" element={<LoanDetail loanType="business" />} />
           </Routes>
         </main>
         <QuoteButton />

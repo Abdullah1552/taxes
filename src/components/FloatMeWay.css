@@ -29,22 +29,11 @@
 .connector-line path {
   transition: all 0.5s ease;
 }
-.process-steps{
-  background-image: url("../components/assets/arrow3.1.png");
-  background-repeat: no-repeat;
-  background-size: 112% 80%;
-}
-@media (max-width: 1024px) {
-  .process-steps{
-    background-size: 132% 80%;
-  }
-}
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
   .process-steps {
     position: relative;
-    background-image: none;
   }
   
   .process-steps::before {

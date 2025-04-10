@@ -19,7 +19,7 @@ export function Stepper() {
 
                 {/* Content layer */}
                 <div className="relative w-full py-12">
-                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-0 grayscale">
+                    <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-y-12 md:gap-y-0">
                         {/* Feature 1 */}
                         <div className="steps-border flex flex-col items-center border-r border-violet-200 px-8 text-center relative z-10">
                             <div className="mb-1 flex h-30 w-30 items-center justify-center">

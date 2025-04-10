@@ -10,6 +10,9 @@ import { RepaymentCalculator } from "./RepaymentCalculator";
 import { LenderPartners } from "./LenderPartners";
 import { ApplyForm } from "./ApplyForm";
 import Loan from "@/Pages/Loan";
+import FAQSection from "./FaqItems";
+import CustomerHelpingSection from "./CustomerHelpingSection";
+import { Process } from "./Process";
 
 const LoanDetail: React.FC<{ loanType: string }> = ({ loanType }) => {
     const { loanId } = useParams<{ loanId: string }>();
@@ -25,11 +28,13 @@ const LoanDetail: React.FC<{ loanType: string }> = ({ loanType }) => {
     return (
         <>
             <Hero />
-            <FeatureIconsSection />
+            <Process/>
             <FloatMeWay />
             <Loan/>
             <LoanDivisions />
+            <CustomerHelpingSection/>
             <Testimonials />
+            <FAQSection/>
             <RepaymentCalculator />
             <LenderPartners />
             <ApplyForm />

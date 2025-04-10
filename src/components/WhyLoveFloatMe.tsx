@@ -9,35 +9,7 @@ export function WhyLoveFloatMe() {
         <div className="text-center mb-16 md:mb-20">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
             A few reasons why you <br className="hidden sm:block" />
-            will love Finance link Australia <span className="inline-flex items-center">
-              <span className="piggy-icon inline-block w-6 h-6 md:w-8 md:h-8 mx-1 bg-violet-200 rounded-full relative">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="absolute inset-0 w-full h-full p-1"
-                >
-                  <path
-                    d="M15 10c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-2.21 1.79-4 4-4s4 1.79 4 4z"
-                    fill="#8b5cf6"
-                    stroke="#8b5cf6"
-                    strokeWidth="1.5"
-                  />
-                  <path
-                    d="M19 10c0 4.42-3.58 8-8 8s-8-3.58-8-8c0-4.42 3.58-8 8-8s8 3.58 8 8z"
-                    stroke="#8b5cf6"
-                    strokeWidth="1.5"
-                  />
-                  <path
-                    d="M12 18v4M8 22h8"
-                    stroke="#8b5cf6"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>AT ME
-            </span>
+            will love Finance link Australia
           </h2>
         </div>
 

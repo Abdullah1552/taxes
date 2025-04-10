@@ -42,14 +42,14 @@ const ProductDropdown = () => {
         <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50 py-2">
           <Link
             to="/personal-loans"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-violet-50 hover:text-violet-600"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-600"
             onClick={() => setOpen(false)}
           >
             Personal Loans
           </Link>
           <Link
             to="/business-loans"
-            className="block px-4 py-2 text-sm text-gray-700 hover:bg-violet-50 hover:text-violet-600"
+            className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-600"
             onClick={() => setOpen(false)}
           >
             Business Loans

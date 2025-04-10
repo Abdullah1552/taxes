@@ -19,7 +19,7 @@ export function FloatMeWay() {
         </div>
 
         {/* Process Steps */}
-        <div className="process-steps mx-auto flex flex-col max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-4 lg:gap-8">
+        <div className="process-steps mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-4 lg:gap-8">
           {/* Step 1 */}
           <div className=" self-center sm:self-start md:self-start relative">
             {/* Connector Line (Desktop Only) */}
@@ -66,7 +66,7 @@ export function FloatMeWay() {
                 <br />
                 online application
               </h3>
-              <p className="mt-auto pt-4 text-center text-amber-600">100% Risk-Free Obligation</p>
+              <p className="mt-auto pt-4 text-center text-amber-600">100% Risk-Free, No-Obligation Process</p>
             </div>
           </div>
 

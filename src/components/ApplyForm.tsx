@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './ApplyForm.css';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import formCard from "../components/assets/cards.png"
 
 export function ApplyForm() {
   const navigate = useNavigate();
@@ -78,8 +79,7 @@ export function ApplyForm() {
 
               <div className="building-blocks-image">
                 <img
-                  style={{ filter: "grayscale(1)" }}
-                  src="/building-blocks.png"
+                  src={formCard}
                   alt="Colorful building blocks"
                   className="w-full max-w-sm mx-auto md:mx-0"
                   onError={(e) => {
