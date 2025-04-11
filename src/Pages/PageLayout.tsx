@@ -12,6 +12,7 @@ import { RepaymentCalculator } from "@/components/RepaymentCalculator";
 import { LenderPartners } from "@/components/LenderPartners";
 import { ApplyForm } from "@/components/ApplyForm";
 import CustomerHelpingSection from "@/components/CustomerHelpingSection";
+import MeetTeam from "@/components/MeetTeam";
 
   interface PageLayoutProps {
     showHero?: boolean;
@@ -28,6 +29,7 @@ import CustomerHelpingSection from "@/components/CustomerHelpingSection";
     showFloatMeWay?: boolean;
     showWhoAreWe?: boolean;
     HelpingSection?: boolean;
+    Team?:boolean,
     customSections?: React.ReactNode;
   }
   
@@ -44,6 +46,7 @@ import CustomerHelpingSection from "@/components/CustomerHelpingSection";
     showLenders = true,
     showApplyForm = true,
     HelpingSection=true,
+    Team=true,
     showFloatMeWay = false,
     showWhoAreWe = false,
     customSections,
@@ -54,6 +57,7 @@ import CustomerHelpingSection from "@/components/CustomerHelpingSection";
       {showWhoAreWe && <WhoAreWe />}
       {showFloatMeWay && <FloatMeWay />}
       {showWhyLove && <WhyLoveFloatMe />}
+      {Team && <MeetTeam />}
       {showLoanDivisions && <LoanDivisions />}
       {HelpingSection && <CustomerHelpingSection />}
       {showPhilosophy && <SimplePhilosophy />}

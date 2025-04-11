@@ -16,11 +16,11 @@ function App() {
         <Navbar />
         <main>
           <Routes>
-            <Route path="/" element={<PageLayout showTestimonials />} />
-            <Route path="/products" element={<PageLayout />} />
-            <Route path="/personal-loans" element={<PageLayout showTestimonials />} />
-            <Route path="/business-loans" element={<PageLayout showTestimonials />} />
-            <Route path="/about" element={<PageLayout showWhoAreWe showFloatMeWay />} />
+            <Route path="/" element={<PageLayout showTestimonials Team={false} />} />
+            <Route path="/products" element={<PageLayout Team={false} />} />
+            <Route path="/personal-loans" element={<PageLayout showTestimonials Team={false} />} />
+            <Route path="/business-loans" element={<PageLayout showTestimonials Team={false} />} />
+            <Route path="/about" element={<PageLayout showWhoAreWe showFloatMeWay Team />} />
             <Route
               path="/partners"
               element={
@@ -33,13 +33,13 @@ function App() {
                   showCalculator={false}
                   showWhoAreWe
                   showFloatMeWay
+                  Team
                 />
               }
             />
             <Route
               path="/apply-now"
-              element={<PageLayout showHero={false} showProcess={false} showWhyLove={false} showLoanDivisions={false} showPhilosophy={false} showFAQ={false} showStepper={false} showTestimonials={false} showLenders={false} />}
-            // only ApplyForm + Calculator
+              element={<PageLayout showHero={false} showProcess={false} showWhyLove={false} showLoanDivisions={false} showPhilosophy={false} showFAQ={false} showStepper={false} showTestimonials={false} showLenders={false} HelpingSection={false} Team={false} />}
             />
             <Route path="/thanks" element={<Loan />} />
             <Route path="/legal" element={<><Loan /><LegalButtons /></>} />

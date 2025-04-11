@@ -83,10 +83,10 @@ export function Navbar() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <Link
-                  to="/products"
+                  to="/legal"
                   className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
                 >
-                  Products
+                  Legal
                 </Link>
               </NavigationMenuItem>
               <ProductDropdown />
@@ -115,14 +115,14 @@ export function Navbar() {
             <nav className="flex flex-col items-center">
               <Link
                 to="/"
-                className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/') ? 'text-violet-600 bg-gray-50' : 'text-gray-900 hover:text-violet-600 hover:bg-gray-50'}`}
+                className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/') ? 'text-black bg-gray-50' : 'text-gray-700 hover:text-gray-300 hover:bg-gray-50'}`}
                 onClick={toggleMenu}
               >
-                HOME
+                Home
               </Link>
               <div className="w-full">
                 <button
-                  className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/products') || location.pathname === '/personal-loans' || location.pathname === '/business-loans' ? 'text-violet-600 bg-gray-50' : 'text-gray-900 hover:text-violet-600 hover:bg-gray-50'} flex items-center justify-center`}
+                  className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/products') || location.pathname === '/personal-loans' || location.pathname === '/business-loans' ? 'text-black bg-gray-50' : 'text-gray-700 hover:text-gray-500 hover:bg-gray-50'} flex items-center justify-center`}
                   onClick={() => setActiveDropdown(activeDropdown === 'mobileProducts' ? null : 'mobileProducts')}
                 >
                   Our Products
@@ -145,7 +145,7 @@ export function Navbar() {
                       <Link
                         key={index}
                         to={item.link}
-                        className={`block px-8 py-2 text-sm ${isActive(item.link) ? 'text-violet-600' : 'text-gray-700 hover:text-violet-600'}`}
+                        className={`block px-8 py-2 text-sm ${isActive(item.link) ? 'text-black' : 'text-gray-700 hover:text-gray-500'}`}
                         onClick={toggleMenu}
                       >
                         {item.name}
@@ -156,31 +156,36 @@ export function Navbar() {
               </div>
               <Link
                 to="/about"
-                className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/about') ? 'text-violet-600 bg-gray-50' : 'text-gray-900 hover:text-violet-600 hover:bg-gray-50'}`}
+                className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/about') ? 'text-black bg-gray-50' : 'text-gray-700 hover:text-gray-500 hover:bg-gray-50'}`}
                 onClick={toggleMenu}
               >
                 Who We Are
               </Link>
               <Link
                 to="/partners"
-                className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/partners') ? 'text-violet-600 bg-gray-50' : 'text-gray-900 hover:text-violet-600 hover:bg-gray-50'}`}
+                className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/partners') ? 'text-black bg-gray-50' : 'text-gray-700 hover:text-gray-500 hover:bg-gray-50'}`}
                 onClick={toggleMenu}
               >
                 Partner With Us
               </Link>
+              <Link
+                to="/legal"
+                className={`px-4 py-3 w-full text-center text-sm font-medium ${isActive('/legal') ? 'text-black bg-gray-50' : 'text-gray-700 hover:text-gray-500 hover:bg-gray-50'}`}
+                onClick={toggleMenu}
+              >
+                Legal
+              </Link>
               <div className="mt-4 w-full px-4">
-                <Button className="w-full rounded-full bg-violet-500 px-6 py-2 text-white hover:bg-violet-600">
+                <Link to="/apply-now">
+                <Button className="w-full rounded-full bg-gray-400 px-6 py-2 text-white hover:bg-gray-600">
                   Apply Now
                 </Button>
+                </Link>
               </div>
             </nav>
           </div>
         )}
 
-        {/* CTA Button - visible on large screens, hidden on mobile/tablet (moved to mobile menu) */}
-        <Button className="hidden lg:block rounded-full bg-violet-500 px-6 py-2 text-white hover:bg-violet-600">
-          Apply Now
-        </Button>
       </div>
     </header>
   );
