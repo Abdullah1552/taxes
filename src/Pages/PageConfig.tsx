@@ -1,4 +1,4 @@
-import HnadHoldingPhone from "../components/assets/Hand-holding-phone2.webp"
+import HnadHoldingPhone from "../components/assets/Hand-holding-phone1.avif"
 import AboutMain from "../components/assets/about-bg1.webp"
 import Partners from "../components/assets/partners1.png"
 import PersonalLoans from "../components/assets/PL1.avif"
@@ -64,11 +64,11 @@ export const pageConfigs: Record<string, PageConfig> = {
         overlay: false
     },
     "/partners": {
-        head: "Collaborate with Finance🔗Link.",
+        head: "Collaborate with Finance Link.",
         titleShort: "Your Partnership",
         titleLong: "Our Priority",
         image: [Partners],
-        text: "At Finance🔗Link, we're committed to delivering exceptional service by working hand-in-hand with trusted industry professionals. No hidden fees—just honest, straightforward loans for people who need real support. If your business shares our values and can bring added value to our clients, we’d be honored to partner with you.",
+        text: "At Finance Link, we're committed to delivering exceptional service by working hand-in-hand with trusted industry professionals. No hidden fees—just honest, straightforward loans for people who need real support. If your business shares our values and can bring added value to our clients, we’d be honored to partner with you.",
         icons: ["product-icon1.png", "product-icon2.png"],
         overlay: false
     },
@@ -77,7 +77,7 @@ export const pageConfigs: Record<string, PageConfig> = {
         titleShort: "Getting Financed",
         titleLong: "Has Never Been This Easy",
         image: [PersonalLoans],
-        text: "Need fuss-free funding? We’ve got you covered! At Finance🔗Link, we make the loan process simple, fast, and stress-free. Our friendly team is here to help you access affordable solutions tailored to your needs—without the hassle, hidden fees, or delays.",
+        text: "Need fuss-free funding? We’ve got you covered! At Finance Link, we make the loan process simple, fast, and stress-free. Our friendly team is here to help you access affordable solutions tailored to your needs—without the hassle, hidden fees, or delays.",
         icons: ["product-icon1.png", "product-icon2.png"],
         overlay: false
     },
@@ -154,7 +154,7 @@ export const pageConfigs: Record<string, PageConfig> = {
         titleShort: "Fueling Your Business Growth",
         titleLong: "Securing Capital Has Never Been This Easy",
         image: [BusinessLoans],
-        text: "Need fuss-free funding? We’ve got you covered! At Finance🔗Link, we make the loan process simple, fast, and stress-free. Our friendly team is here to help you access affordable solutions tailored to your needs—without the hassle, hidden fees, or delays.",
+        text: "Need fuss-free funding? We’ve got you covered! At Finance Link, we make the loan process simple, fast, and stress-free. Our friendly team is here to help you access affordable solutions tailored to your needs—without the hassle, hidden fees, or delays.",
         icons: ["product-icon1.png", "product-icon2.png"],
         overlay: false
     },
@@ -223,17 +223,17 @@ export const pageConfigs: Record<string, PageConfig> = {
 
 export const loanConfigs: Record<string, LoanConfig> = {
     "/thanks": {
-        titleShort: "Finance🔗Link",
+        titleShort: "Finance Link",
         titleLong: "THANK YOU!",
         images: Thanks,
         textF: "Thank you for reaching out to us! We appreciate your message and will respond as soon as possible. If there is anything urgent that requires immediate attention, please don't hesitate to let us know. We look forward to connecting with you soon and discussing how we can work together.",
         textL: ""
     },
     "/legal": {
-        titleShort: "Finance🔗Link",
+        titleShort: "Finance Link",
         titleLong: "Legal Information",
         images: legal,
-        textF: `𝗔𝘁 𝗙𝗶𝗻𝗮𝗻𝗰𝗲🔗𝗟𝗶𝗻𝗸, we take your privacy seriously and are committed to protecting your personal data. This Legal section outlines our 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗼𝗹𝗶𝗰𝘆, 𝗧𝗲𝗿𝗺𝘀 & 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻𝘀, and important disclaimers related to the use of our services. Please read the information below carefully to understand your rights and our responsibilities. 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗼𝗹𝗶𝗰𝘆. 𝗧𝗲𝗿𝗺𝘀 & 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻𝘀. 𝗖𝗿𝗲𝗱𝗶𝘁 𝗚𝘂𝗶𝗱𝗲. Finance🔗Link reserves the right to update or modify terms at any time without prior notice. It is your responsibility to review our terms periodically.`,
+        textF: `𝗔𝘁 𝗙𝗶𝗻𝗮𝗻𝗰𝗲 𝗟𝗶𝗻𝗸, we take your privacy seriously and are committed to protecting your personal data. This Legal section outlines our 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗼𝗹𝗶𝗰𝘆, 𝗧𝗲𝗿𝗺𝘀 & 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻𝘀, and important disclaimers related to the use of our services. Please read the information below carefully to understand your rights and our responsibilities. 𝗣𝗿𝗶𝘃𝗮𝗰𝘆 𝗣𝗼𝗹𝗶𝗰𝘆. 𝗧𝗲𝗿𝗺𝘀 & 𝗖𝗼𝗻𝗱𝗶𝘁𝗶𝗼𝗻𝘀. 𝗖𝗿𝗲𝗱𝗶𝘁 𝗚𝘂𝗶𝗱𝗲. Finance Link reserves the right to update or modify terms at any time without prior notice. It is your responsibility to review our terms periodically.`,
         textL: `𝗖𝗼𝗻𝘁𝗮𝗰𝘁 𝗨𝘀 For legal inquiries, data access requests, or anything related to privacy and compliance, please email us at Enquiries@finacelinkaustralia.com.au. Last Updated: April 2025
   `
     },

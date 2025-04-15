@@ -4,8 +4,8 @@ import faq from "./assets/faq.webp";
 import { motion } from "framer-motion";
 const faqItems = [
     {
-        question: "What is Finance🔗Link?",
-        answer: "Finance🔗Link is a platform for managing and comparing loan options easily.",
+        question: "What is Finance Link?",
+        answer: "Finance Link is a platform for managing and comparing loan options easily.",
     },
     {
         question: "How do I apply for a loan?",

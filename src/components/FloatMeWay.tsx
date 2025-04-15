@@ -11,7 +11,7 @@ export function FloatMeWay() {
           <div className="flex items-center justify-center">
             <span className="text-3xl font-bold md:text-4xl lg:text-5xl">FINANCE</span>
             <div className="h-4 float-piggy relative mx-1 inline-block w-4 md:h-10 md:w-10">
-              🔗
+            <span className="inline-block rotate-90">🔗</span>
             </div>
             <span className="text-3xl font-bold md:text-4xl lg:text-5xl">LINK</span>
           </div>

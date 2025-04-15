@@ -57,7 +57,7 @@ export function ApplyForm() {
   };
 
   return (
-    <section className="apply-form-section py-16 md:py-24 grayscale">
+    <section className="apply-form-section py-16 md:py-24 grayscale drop-shadow-xl/25">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
 
@@ -94,7 +94,7 @@ export function ApplyForm() {
 
           {/* Right content - application form */}
           <div className="w-full md:w-1/2">
-            <div className="apply-form-card bg-white rounded-3xl shadow-xl p-8 md:p-10">
+            <div className="apply-form-card bg-white rounded-3xl p-8 md:p-10 shadow-[0_15px_40px_rgba(0,0,0,0.3)]">
               <h3 className="text-2xl font-bold mb-6">
                 Let's get started
               </h3>

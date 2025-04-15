@@ -3,139 +3,131 @@ import "./WhyLoveFloatMe.css";
 
 export function WhyLoveFloatMe() {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-200 to-white overflow-hidden">
-      <div className="container mx-auto px-4 md:px-8">
-        {/* Heading */}
-        <div className="text-center mb-16 md:mb-20">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
-            A few reasons why you <br className="hidden sm:block" />
-            will love Finance link Australia
-          </h2>
-        </div>
-
-        {/* Grid of Benefits */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-16 max-w-6xl mx-auto">
-          {/* Benefit 1 - Fast, Easy Applications */}
-          <div className="benefit-item flex flex-col items-center text-center">
-            <div className="relative mb-6">
-              <div className="benefit-icon-shadow"></div>
-              <div className="benefit-icon-pink h-24 w-24 md:h-28 md:w-28 relative">
-                <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="50" cy="50" r="40" fill="#EC4899" />
-                  <circle cx="50" cy="50" r="30" fill="white" stroke="#EC4899" strokeWidth="2" />
-                  <path d="M50 30 L50 50 L65 58" stroke="#EC4899" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M50 20 L50 25" stroke="#EC4899" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M50 75 L50 80" stroke="#EC4899" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M20 50 L25 50" stroke="#EC4899" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M75 50 L80 50" stroke="#EC4899" strokeWidth="3" strokeLinecap="round" />
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold mb-1">Fast, Easy Applications<br/>outcomes</h3>
-          </div>
-
-          {/* Benefit 2 - No hidden fees  */}
-          <div className="benefit-item flex flex-col items-center text-center">
-            <div className="relative mb-6">
-              <div className="benefit-icon-shadow"></div>
-              <div className="benefit-icon-yellow h-24 w-24 md:h-28 md:w-28 relative">
-                <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g transform="rotate(15, 50, 50)">
-                    <rect x="25" y="25" width="50" height="50" rx="5" fill="#EAB308" />
-                    <circle cx="40" cy="40" r="6" fill="white" />
-                    <circle cx="60" cy="40" r="6" fill="white" />
-                    <circle cx="40" cy="60" r="6" fill="white" />
-                    <circle cx="60" cy="60" r="6" fill="white" />
-                    <text x="38" y="43" className="text-2xl font-bold" fill="black">?</text>
-                    <text x="58" y="43" className="text-2xl font-bold" fill="black">?</text>
-                    <text x="38" y="63" className="text-2xl font-bold" fill="black">?</text>
-                    <text x="58" y="63" className="text-2xl font-bold" fill="black">?</text>
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold mb-1">No hidden<br/>fees </h3>
-          </div>
-
-          {/* Benefit 3 - No Impact on Your Credit Score */}
-          <div className="benefit-item flex flex-col items-center text-center">
-            <div className="relative mb-6">
-              <div className="benefit-icon-shadow"></div>
-              <div className="benefit-icon-red h-24 w-24 md:h-28 md:w-28 relative">
-                <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g transform="rotate(15, 50, 50)">
-                    <path d="M30 70 L70 30" stroke="#FF5252" strokeWidth="10" strokeLinecap="round" />
-                    <path d="M30 30 L70 70" stroke="#FF5252" strokeWidth="10" strokeLinecap="round" />
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold mb-1">No Impact on Your <br/>Credit score</h3>
-          </div>
-
-          {/* Benefit 4 - Competitive interest rates */}
-          <div className="benefit-item flex flex-col items-center text-center">
-            <div className="relative mb-6">
-              <div className="benefit-icon-shadow"></div>
-              <div className="benefit-icon-gradient h-24 w-24 md:h-28 md:w-28 relative">
-                <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g transform="rotate(-15, 50, 50)">
-                    <rect x="25" y="25" width="50" height="50" rx="5" fill="url(#gradient)" />
-                    <path d="M40 40 H60" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M35 50 H65" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                    <path d="M40 60 H60" stroke="white" strokeWidth="3" strokeLinecap="round" />
-                    <text x="45" y="65" className="text-2xl font-bold" fill="white">%</text>
-                  </g>
-                  <defs>
-                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#FF5252" />
-                      <stop offset="100%" stopColor="#FF9800" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold mb-1">Competitive interest<br/>rates</h3>
-          </div>
-
-          {/* Benefit 5 -  Personalised Finance Solutions*/}
-          <div className="benefit-item flex flex-col items-center text-center">
-            <div className="relative mb-6">
-              <div className="benefit-icon-shadow"></div>
-              <div className="benefit-icon-blue h-24 w-24 md:h-28 md:w-28 relative">
-                <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="45" cy="45" r="20" fill="#38BDF8" />
-                  <circle cx="65" cy="55" r="20" fill="#34D399" />
-                  <circle cx="55" cy="50" r="15" fill="white" />
-                  <path d="M50 45 L60 55" stroke="#374151" strokeWidth="3" strokeLinecap="round" />
-                  <path d="M60 45 L50 55" stroke="#374151" strokeWidth="3" strokeLinecap="round" />
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold mb-1"> Personalised Finance <br/>Solutions</h3>
-          </div>
-
-          {/* Benefit 6 - Backed by Trusted Partners */}
-          <div className="benefit-item flex flex-col items-center text-center">
-            <div className="relative mb-6">
-              <div className="benefit-icon-shadow"></div>
-              <div className="benefit-icon-blue h-24 w-24 md:h-28 md:w-28 relative">
-                <svg className="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="30" y="20" width="40" height="60" rx="5" fill="#4F46E5" />
-                  <rect x="35" y="30" width="30" height="5" rx="2.5" fill="white" />
-                  <rect x="35" y="40" width="20" height="5" rx="2.5" fill="white" />
-                  <rect x="35" y="50" width="30" height="5" rx="2.5" fill="white" />
-                  <rect x="35" y="60" width="25" height="5" rx="2.5" fill="white" />
-                  <path d="M75 45 L80 50 L75 55" stroke="#FFD700" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M65 50 L80 50" stroke="#FFD700" strokeWidth="3" strokeLinecap="round" />
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-xl font-semibold mb-1">Backed by Trusted <br/>Partners</h3>
-          </div>
-        </div>
+    <div className="py-24 bg-white grayscale">
+    <div className="max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
+      
+      <div className="text-center">
+        <p className="mt-4 text-sm leading-7 text-gray-500 font-regular">
+        A few reasons why you
+        </p>
+        <h3 className="text-3xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
+        Will Love Finance link Australia
+        </h3>
+        
       </div>
-    </section>
+  
+      <div className="mt-20">
+        <ul className="">
+          
+          <li className="text-left mb-10">
+            <div className="flex flex-row items-start">
+              <div className="flex flex-col items-center justify-center mr-5">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                  1
+                </div>
+                <span className="text-gray-500">STEP</span>
+              </div>
+              <div className="bg-gray-100 p-5 pb-10 ">
+                <h4 className="text-lg leading-6 font-semibold text-gray-900">Fast, Easy Applications outcomes</h4>
+                <p className="mt-2 text-base leading-6 text-gray-500">
+                Apply in minutes and get quick decisions without the hassle.
+                We make the process simple and stress-free.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className="text-left mb-10">
+            <div className="flex flex-row items-start">
+              <div className="flex flex-col items-center justify-center mr-5">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                  2
+                </div>
+                <span className="text-gray-500">STEP</span>
+              </div>
+              <div className="bg-gray-100 p-5 pb-10 ">
+                <h4 className="text-lg leading-6 font-semibold text-gray-900">No hiddenn fees </h4>
+                <p className="mt-2 text-base leading-6 text-gray-500">
+                What you see is what you get — no surprises.
+                Transparent pricing, always.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className="text-left mb-10">
+            <div className="flex flex-row items-start">
+              <div className="flex flex-col items-center justify-center mr-5">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                  3
+                </div>
+                <span className="text-gray-500">STEP</span>
+              </div>
+              <div className="bg-gray-100 p-5 pb-10 ">
+                <h4 className="text-lg leading-6 font-semibold text-gray-900">No Impact on Your <br/>Credit score</h4>
+                <p className="mt-2 text-base leading-6 text-gray-500">
+                Explore your options risk-free.
+                Checking won’t affect your credit score.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className="text-left mb-10">
+            <div className="flex flex-row items-start">
+              <div className="flex flex-col items-center justify-center mr-5">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                  4
+                </div>
+                <span className="text-gray-500">STEP</span>
+              </div>
+              <div className="bg-gray-100 p-5 pb-10 ">
+                <h4 className="text-lg leading-6 font-semibold text-gray-900">Competitive interest<br/>rates</h4>
+                <p className="mt-2 text-base leading-6 text-gray-500">
+                Enjoy great rates designed to save you more.
+                Fair and affordable financing.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className="text-left mb-10">
+            <div className="flex flex-row items-start">
+              <div className="flex flex-col items-center justify-center mr-5">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                  5
+                </div>
+                <span className="text-gray-500">STEP</span>
+              </div>
+              <div className="bg-gray-100 p-5 pb-10 ">
+                <h4 className="text-lg leading-6 font-semibold text-gray-900">Personalised Finance <br/>Solutions</h4>
+                <p className="mt-2 text-base leading-6 text-gray-500">
+                We tailor finance solutions to fit your needs.
+                One-on-one support, every step of the way.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className="text-left mb-10">
+            <div className="flex flex-row items-start">
+              <div className="flex flex-col items-center justify-center mr-5">
+                <div className="flex items-center justify-center h-20 w-20 rounded-full bg-indigo-500 text-white border-4 border-white text-xl font-semibold">
+                  6
+                </div>
+                <span className="text-gray-500">STEP</span>
+              </div>
+              <div className="bg-gray-100 p-5 pb-10 ">
+                <h4 className="text-lg leading-6 font-semibold text-gray-900">Backed by Trusted <br/>Partners</h4>
+                <p className="mt-2 text-base leading-6 text-gray-500">
+                Partnered with Australia’s most reliable lenders.
+                Your finances are in good hands.
+                </p>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  
   );
 }
 

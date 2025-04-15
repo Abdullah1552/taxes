@@ -119,7 +119,7 @@ export function Testimonials() {
         <div className="mb-12 text-center">
           <h2 className="mb-2 text-3xl font-bold md:text-4xl">What our awesome clients say</h2>
           <div className="flex items-center justify-center">
-            <h2 className="text-3xl font-bold md:text-4xl">about Finance🔗Link</h2>
+            <h2 className="text-3xl font-bold md:text-4xl">about Finance<span className="inline-block rotate-90">🔗</span>Link</h2>
           </div>
         </div>
 

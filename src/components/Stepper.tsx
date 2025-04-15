@@ -1,6 +1,6 @@
-import Stepper1 from "./assets/stepper1.avif";
-import Stepper2 from "./assets/stepper2.avif";
-import Stepper3 from "./assets/stepper3.avif";
+import Stepper1 from "./assets/fastClock1.webp";
+import Stepper2 from "./assets/stepper2.1.webp";
+import Stepper3 from "./assets/Tailored Lending Options.webp";
 
 export function Stepper() {
     return (
@@ -30,7 +30,7 @@ export function Stepper() {
                                 <br />
                                 Applications
                             </h3>
-                            <div className="steps-badge absolute -top-5 left-1/2 -translate-x-1/2 rounded-full bg-violet-600 text-white text-sm md:text-lg lg:text-4xl w-8 h-8 md:w-10 md:h-10 lg:w-16 lg:h-16 flex items-center justify-center font-bold shadow-lg z-10">
+                            <div className="steps-badge absolute -top-5 left-1/2 -translate-x-1/2 rounded-full bg-gray-600 text-white text-sm md:text-lg lg:text-4xl w-8 h-8 md:w-10 md:h-10 lg:w-16 lg:h-16 flex items-center justify-center font-bold shadow-lg z-10">
                                 1
                             </div>
                         </div>
@@ -43,7 +43,7 @@ export function Stepper() {
                             <h3 className="mb-1 text-xl font-bold text-white">
                                 Receive Outcome <br /> Within Hours
                             </h3>
-                            <div className="steps-badge absolute -top-5 left-1/2 -translate-x-1/2 rounded-full bg-violet-600 text-white text-sm md:text-lg lg:text-4xl w-8 h-8 md:w-10 md:h-10 lg:w-16 lg:h-16 flex items-center justify-center font-bold shadow-lg z-10">
+                            <div className="steps-badge absolute -top-5 left-1/2 -translate-x-1/2 rounded-full bg-gray-600 text-white text-sm md:text-lg lg:text-4xl w-8 h-8 md:w-10 md:h-10 lg:w-16 lg:h-16 flex items-center justify-center font-bold shadow-lg z-10">
                                 2
                             </div>
                         </div>
@@ -56,7 +56,7 @@ export function Stepper() {
                             <h3 className="mb-1 text-xl font-bold text-white">
                                 Get funds <br /> Quickly
                             </h3>
-                            <div className="steps-badge absolute -top-5 left-1/2 -translate-x-1/2 rounded-full bg-violet-600 text-white text-sm md:text-lg lg:text-4xl w-8 h-8 md:w-10 md:h-10 lg:w-16 lg:h-16 flex items-center justify-center font-bold shadow-lg z-10">
+                            <div className="steps-badge absolute -top-5 left-1/2 -translate-x-1/2 rounded-full bg-gray-600 text-white text-sm md:text-lg lg:text-4xl w-8 h-8 md:w-10 md:h-10 lg:w-16 lg:h-16 flex items-center justify-center font-bold shadow-lg z-10">
                                 3
                             </div>
                         </div>
@@ -66,7 +66,7 @@ export function Stepper() {
                 <div className="relative z-20 -mt-10 flex justify-center">
                     <div className="w-[80%] md:w-[70%] backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl shadow-xl py-6 px-8 text-center">
                         <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-white">
-                            Yes, it’s that easy.
+                        Surprisingly easy, right?
                         </h3>
                     </div>
                 </div>

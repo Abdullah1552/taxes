@@ -15,7 +15,7 @@ export function Footer() {
               <Link className="footer-logo-link" to="/">
                 <span className="hidden-link-text">LOGO</span>
                 <span className="text-3xl font-bold mr-1">FINANCE</span>
-                🔗
+                <span className="inline-block rotate-90">🔗</span>
                 <span className="text-3xl font-bold ml-1">LINK</span>
                 <div className="legal-info text-sm sm:text-s text-gray-500 mb-8 text-center sm:text-left">
                   <p className="mb-4 mt-4">
@@ -121,7 +121,7 @@ export function Footer() {
         <div className="footer-copyright">
           <div className="footer-copyright-wrapper">
             <p className="footer-copyright-text">
-              <a className="footer-copyright-link" href="#" target="_self"> ©2025 Finance🔗Link. All Rights Reserved.</a>
+              <a className="footer-copyright-link" href="#" target="_self"> ©2025 Finance<span className="inline-block rotate-90">🔗</span>Link. All Rights Reserved.</a>
             </p>
           </div>
         </div>

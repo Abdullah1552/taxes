@@ -120,7 +120,7 @@ export function RepaymentCalculator() {
           </div>
 
           <div className="calculator-form">
-            <div className="calculator-card bg-white rounded-2xl shadow-xl p-8">
+            <div className="calculator-card bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.3)] p-8">
               <div className="calculator-header mb-8">
                 <h3 className="text-xl md:text-2xl text-black font-medium mb-2">
                   Get an estimate of<br />your repayments

@@ -32,13 +32,13 @@ export function WhoAreWe() {
 
                             <div className="space-y-6 text-gray-700">
                                 <p>
-                                    Finance🔗Link makes getting the funding you need simple—no complex applications, no hidden fees. We're not just about delivering accurate information; we're committed to fairness, transparency, and setting high standards as we help you reach your financial goals.
+                                    Finance<span className="inline-block rotate-90">🔗</span>Link makes getting the funding you need simple—no complex applications, no hidden fees. We're not just about delivering accurate information; we're committed to fairness, transparency, and setting high standards as we help you reach your financial goals.
                                 </p>
 
                                 <p>
                                     For too long, the industry has struggled to connect people with lenders who truly meet their needs—especially when speed matters.
 
-                                    At Finance🔗Link, we're here to change that from the ground up—offering fast, reliable solutions through a clear, simple 1-2-3 process.
+                                    At Finance<span className="inline-block rotate-90">🔗</span>Link, we're here to change that from the ground up—offering fast, reliable solutions through a clear, simple 1-2-3 process.
                                 </p>
                             </div>
                         </div>

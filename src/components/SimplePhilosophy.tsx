@@ -21,7 +21,8 @@ export function SimplePhilosophy() {
           <div className="w-full lg:w-1/2">
             <div className="text-content">
               <h2 className="mb-2 text-3xl font-bold md:text-4xl">
-                At <span className="inline-flex items-center">Finance🔗Link</span>
+                At <span className="inline-flex items-center">Finance<span className="inline-block rotate-90">🔗</span>
+                Link</span>
               </h2>
 
               <h2 className="mb-6 text-3xl font-bold md:text-4xl">
