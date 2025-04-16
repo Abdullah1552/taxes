@@ -20,7 +20,7 @@ function App() {
             <Route path="/products" element={<PageLayout Team={false} />} />
             <Route path="/personal-loans" element={<PageLayout showTestimonials Team={false} />} />
             <Route path="/business-loans" element={<PageLayout showTestimonials Team={false} />} />
-            <Route path="/about" element={<PageLayout showTestimonials showWhoAreWe showFloatMeWay Team />} />
+            <Route path="/about" element={<PageLayout showTestimonials showWhoAreWe Team />} />
             <Route
               path="/partners"
               element={
