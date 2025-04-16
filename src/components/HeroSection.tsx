@@ -45,7 +45,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ head, titleShort, titleLong, 
                 <div className="absolute left-[32%] top-[-20%] flex h-[60%] w-[60%] flex-col items-center card-hero sm:left-[20%] sm:top-[-3%] sm:w-[60%] lg:left-[26%] lg:top-[-5%] lg:w-[50%]">
                   {/* Logo Section */}
                   <div className="mb-4 w-full pt-14 text-center">
-                    <h2 className="hidden sm:hidden md:block text-2xl font-bold tracking-wider">
+                    <h2 className="hidden text-2xl font-bold tracking-wider">
                       Finance🔗Link
                     </h2>
                   </div>

@@ -33,6 +33,7 @@ p,a,h1,h2,h3,h4 {
 
 .section-team .single-person:hover {
 	background: linear-gradient(to right, #016cec, #00b5f7);
+    filter: grayscale(1);
 }
 
 .section-team .single-person .person-image {

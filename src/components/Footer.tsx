@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-
+import logo from "../components/assets/finance-link-logo.png"
 export function Footer() {
   return (
     <div className="pg-footer">
@@ -14,10 +14,11 @@ export function Footer() {
             <div className="footer-logo">
               <Link className="footer-logo-link" to="/">
                 <span className="hidden-link-text">LOGO</span>
-                <span className="text-3xl font-bold mr-1">FINANCE</span>
+                {/* <span className="text-3xl font-bold mr-1 text-white">FINANCE</span>
                 <span className="inline-block rotate-90">🔗</span>
-                <span className="text-3xl font-bold ml-1">LINK</span>
-                <div className="legal-info text-sm sm:text-s text-gray-500 mb-8 text-center sm:text-left">
+                <span className="text-3xl font-bold ml-1 text-white">LINK</span> */}
+                <img src={logo} alt="logo" />
+                <div className="legal-info text-sm sm:text-s text-gray-500 mb-8 text-left sm:text-left">
                   <p className="mb-4 mt-4">
                     Finance Link Australia is committed to empowering your financial future. As an authorised credit representative of Fintelligence, we simplify your financial journey by offering expert-backed, transparent, and tailored finance solutions.
                   </p>

@@ -81,14 +81,6 @@ export function Navbar() {
                   Home
                 </Link>
               </NavigationMenuItem>
-              <NavigationMenuItem>
-                <Link
-                  to="/legal"
-                  className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
-                >
-                  Legal
-                </Link>
-              </NavigationMenuItem>
               <ProductDropdown />
               <NavigationMenuItem>
                 <Link
@@ -104,6 +96,14 @@ export function Navbar() {
                   className={`px-4 py-2 text-sm font-medium ${isActive('/partners') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
                 >
                   Partner With Us
+                </Link>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <Link
+                  to="/legal"
+                  className={`px-4 py-2 text-sm font-medium ${isActive('/about') ? 'text-white' : 'text-gray-300 hover:text-gray-300'}`}
+                >
+                  Legal
                 </Link>
               </NavigationMenuItem>
             </NavigationMenuList>

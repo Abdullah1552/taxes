@@ -5,6 +5,9 @@
 html {
   scroll-behavior: smooth;
 }
+a:hover{
+  text-decoration: none !important;
+}
 body {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   

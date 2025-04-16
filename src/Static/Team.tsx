@@ -1,24 +1,24 @@
 import team from "../components/assets/team.webp"
+import team1 from "../components/assets/team/team1.1.png"
+import team2 from "../components/assets/team/team2.1.png"
 export const Team= [
     {
       name: "John Doe",
       role: "CEO",
-      image: team,
+      description:"abc abc abc abc abc abc abc abc abc abc abc abc abc abc ",
+      image: team1,
     },
     {
       name: "Robert Smith",
       role: "CTO",
-      image: team,
+      description:"abc abc abc abc abc abc abc abc abc abc abc abc abc abc ",
+      image: team2,
     },
     {
       name: "John Doe",
       role: "CFO",
+      description:"abc abc abc abc abc abc abc abc abc abc abc abc abc abc ",
       image: team,
-    },
-    {
-      name: "John Smith",
-      role: "COO",
-      image: team,
-    },
+    }
   ];
   

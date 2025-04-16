@@ -62,9 +62,9 @@ import MeetTeam from "@/components/MeetTeam";
       {HelpingSection && <CustomerHelpingSection />}
       {showPhilosophy && <SimplePhilosophy />}
       {showStepper && <Stepper />}
+      {showCalculator && <RepaymentCalculator />}
       {showTestimonials && <Testimonials />}
       {showFAQ && <FAQSection />}
-      {showCalculator && <RepaymentCalculator />}
       {showLenders && <LenderPartners />}
       {showApplyForm && <ApplyForm />}
       {customSections}

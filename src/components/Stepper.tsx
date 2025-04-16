@@ -13,7 +13,7 @@ export function Stepper() {
             </div>
 
             {/* Skewed background wrapper */}
-            <div className="relative w-full">
+            <div className="relative w-full overflow-hidden">
                 {/* Skewed background layer */}
                 <div className="absolute inset-0 transform origin-top-right -rotate-3 -skew-x-3 bg-black z-0 h-[110%]"></div>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './RepaymentCalculator.css';
-import Calculator from "./assets/Calculator.avif"
+import Calculator from "./assets/Calculator.webp"
 import { Link } from 'react-router-dom';
 
 export function RepaymentCalculator() {
@@ -90,7 +90,7 @@ export function RepaymentCalculator() {
   };
 
   return (
-    <section className="calculator-section py-16 md:py-24 grayscale">
+    <section className="calculator-section py-16 md:py-24">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="calculator-content">
@@ -103,7 +103,7 @@ export function RepaymentCalculator() {
               and support, but now there's one more thing.
             </p>
             <p className="text-lg mb-6">
-              A <span className="text-gray-600 font-medium">loan repayment calculator</span> that will help you 
+              A loan repayment calculator that will help you 
               work out <span className="text-gray-600 font-medium">how your payments will fit</span> into your 
               monthly expenses!
             </p>
@@ -119,7 +119,7 @@ export function RepaymentCalculator() {
             </div>
           </div>
 
-          <div className="calculator-form">
+          <div className="calculator-form grayscale">
             <div className="calculator-card bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.3)] p-8">
               <div className="calculator-header mb-8">
                 <h3 className="text-xl md:text-2xl text-black font-medium mb-2">

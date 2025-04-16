@@ -33,9 +33,9 @@ const LoanDetail: React.FC<{ loanType: string }> = ({ loanType }) => {
             <Loan/>
             <LoanDivisions />
             <CustomerHelpingSection/>
+            <RepaymentCalculator />
             <Testimonials />
             <FAQSection/>
-            <RepaymentCalculator />
             <LenderPartners />
             <ApplyForm />
         </>

@@ -57,7 +57,7 @@ export function ApplyForm() {
   };
 
   return (
-    <section className="apply-form-section py-16 md:py-24 grayscale drop-shadow-xl/25">
+    <section className="apply-form-section py-16 md:py-24 drop-shadow-xl/25">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center">
 
@@ -73,7 +73,7 @@ export function ApplyForm() {
                 way to submitting your finance application with Finance link australia.
               </p>
 
-              <p className="text-lg text-purple-600 font-medium mb-8">
+              <p className="text-lg text-black font-medium mb-8">
                 Let us help build the custom solution for you!
               </p>
 
@@ -93,7 +93,7 @@ export function ApplyForm() {
           </div>
 
           {/* Right content - application form */}
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 grayscale">
             <div className="apply-form-card bg-white rounded-3xl p-8 md:p-10 shadow-[0_15px_40px_rgba(0,0,0,0.3)]">
               <h3 className="text-2xl font-bold mb-6">
                 Let's get started
