@@ -29,7 +29,8 @@ const LoanDetail: React.FC<{ loanType: string }> = ({ loanType }) => {
         <>
             <Hero />
             <Process/>
-            <FloatMeWay />
+            {/* <FloatMeWay /> */}
+            <WhyLoveFloatMe />
             <Loan/>
             <LoanDivisions />
             <CustomerHelpingSection/>
