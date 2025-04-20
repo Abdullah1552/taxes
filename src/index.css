@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
-a:hover{
+
+a:hover {
   text-decoration: none !important;
 }
+
 body {
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
-  
+
   /* font-family: "Poppins", sans-serif;  */
   font-family: "Outfit", sans-serif;
   /* filter: grayscale(1); */
@@ -77,6 +80,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -93,6 +97,28 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+@media (max-width: 1280px) {
+  .hero-overlay-bg {
+    background-size: cover;
+  }
+
+  .hero-overlay {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero-overlay {
+    padding: 1rem;
+  }
+
+  .hero-overlay-main {
+    margin-bottom: 9rem;
+  }
+}
+
 
 /* Responsiveness */
 @media (min-width: 300px) and (max-width: 576px) {
@@ -119,11 +145,12 @@ body {
     top: 17vh;
     left: -8vw;
   }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1200px) {
- 
+
   .card-hero {
     width: 20.5vw !important;
   }
@@ -142,14 +169,34 @@ body {
 }
 
 @media (max-width: 768px) {
-  .steps-badge{
+  .steps-badge {
     display: none;
   }
-  .steps-border{
+
+  .steps-border {
     border-right-width: 0px;
   }
-  .process-arrow{
+
+  .process-arrow {
     display: none;
+  }
+
+  .hero-overlay {
+    padding: 3rem;
+  }
+
+  .hero-overlay-main {
+    margin-bottom: 15rem;
+  }
+}
+
+@media (max-width:490px) {
+  .hero-overlay {
+    padding: 1rem;
+  }
+
+  .hero-overlay-main {
+    margin-bottom: 10rem;
   }
 }
 
@@ -182,6 +229,4 @@ body {
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  
-}
+@media (min-width: 1400px) {}

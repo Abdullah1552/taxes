@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 interface HeroSectionProps {
   head: string,
@@ -12,6 +13,9 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ head, titleShort, titleLong, image, text, overlay }) => {
   const [loanAmount, setLoanAmount] = useState("");
+  const location = useLocation();
+  const currentPath = location.pathname;
+  const shouldShowOverlay = currentPath === "/" || currentPath === "/products";
 
   return (
     <>
@@ -34,14 +38,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({ head, titleShort, titleLong, 
             <div className="relative w-[90vw] sm:w-[70vw] lg:w-[50vw] aspect-[3/4] max-w-[500px]">
               {/* Hand and phone image as background */}
               <div
-                className="absolute inset-0 bg-no-repeat bg-contain bg-center"
+                className={`absolute inset-0 bg-no-repeat bg-contain bg-center ${shouldShowOverlay ? "hero-overlay-bg" : ""}`}
                 style={{ backgroundImage: `url(${image[0]})` }}
               ></div>
 
               {/* Overlay positioned using flex, no hardcoded left/top */}
               {overlay && (
-                <div className="absolute inset-0 flex items-center justify-center p-4 mb-44">
-                  <div className="w-[65%] rounded-xl bg-white p-5 shadow-2xl">
+                <div className={`absolute inset-0 flex items-center justify-center p-4 mb-44 ${shouldShowOverlay ? "hero-overlay-main" : ""}`}>
+                  <div className={`w-[65%] rounded-xl bg-white md:p-5 shadow-2xl ${shouldShowOverlay ? "hero-overlay" : ""}`}>
                     <h3 className="mb-3 text-lg font-bold">Let's get started</h3>
                     <div className="mb-3">
                       <p className="mb-1 text-xs">How much do you want to borrow?</p>
