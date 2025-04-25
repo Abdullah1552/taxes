@@ -10,17 +10,18 @@
 .calculator-card {
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(160, 119, 234, 0.12);
+  /* box-shadow: 0 10px 25px rgba(160, 119, 234, 0.12); */
   transition: all 0.3s ease;
 }
 
 .calculator-card:hover {
-  box-shadow: 0 15px 30px rgba(160, 119, 234, 0.18);
+  box-shadow: 0 15px 30px rgba(160, 119, 234, 0.7);
   transform: translateY(-5px);
 }
 
 /* Arrow animation */
 .arrow-animation {
+  display: none;
   position: absolute;
   top: -30px;
   right: 20px;

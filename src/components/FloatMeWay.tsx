@@ -3,7 +3,7 @@ import "./FloatMeWay.css";
 
 export function FloatMeWay() {
   return (
-    <section className="bg-gradient-to-br from-white to-violet-50 py-16 md:py-24">
+    <section className="bg-gradient-to-br from-white to-violet-50 py-16 md:py-24 grayscale">
       <div className="container mx-auto px-4 md:px-8">
         {/* Main Heading */}
         <div className="mb-12 text-center md:mb-16">
@@ -11,7 +11,7 @@ export function FloatMeWay() {
           <div className="flex items-center justify-center">
             <span className="text-3xl font-bold md:text-4xl lg:text-5xl">FINANCE</span>
             <div className="h-4 float-piggy relative mx-1 inline-block w-4 md:h-10 md:w-10">
-              🔗
+            <span className="inline-block rotate-90">🔗</span>
             </div>
             <span className="text-3xl font-bold md:text-4xl lg:text-5xl">LINK</span>
           </div>
@@ -21,7 +21,7 @@ export function FloatMeWay() {
         {/* Process Steps */}
         <div className="process-steps mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-4 lg:gap-8">
           {/* Step 1 */}
-          <div className="relative">
+          <div className=" self-center sm:self-start md:self-start relative">
             {/* Connector Line (Desktop Only) */}
             <div className="connector-line absolute -right-4 top-12 z-10 hidden h-16 w-8 md:block">
               <svg
@@ -62,16 +62,16 @@ export function FloatMeWay() {
 
               {/* Content */}
               <h3 className="mb-2 text-center text-xl font-semibold">
-                Speedy
+              Quick
                 <br />
                 online application
               </h3>
-              <p className="mt-auto pt-4 text-center text-amber-600">100% No Obligation</p>
+              <p className="mt-auto pt-4 text-center text-amber-600">100% Risk-Free, No-Obligation Process</p>
             </div>
           </div>
 
           {/* Step 2 */}
-          <div className="relative">
+          <div className=" self-center sm:self-center md:self-center relative">
             {/* Connector Line (Desktop Only) */}
             <div className="connector-line absolute -right-4 top-12 z-10 hidden h-16 w-8 md:block">
               <svg
@@ -112,12 +112,12 @@ export function FloatMeWay() {
 
               {/* Content */}
               <h3 className="mb-2 text-center text-xl font-semibold">
-                Get an answer
+              Receive a response
                 <br />
                 within hours
               </h3>
               <p className="mt-auto pt-4 text-center">
-                <span className="text-amber-600">With no hit against</span>
+                <span className="text-amber-600">Without impacting</span>
                 <br />
                 <span className="text-amber-600">your credit score</span>
               </p>
@@ -125,7 +125,7 @@ export function FloatMeWay() {
           </div>
 
           {/* Step 3 */}
-          <div className="relative">
+          <div className=" self-center sm:self-end md:self-end relative">
             {/* Card */}
             <div className="process-card flex h-full flex-col items-center rounded-xl bg-white p-6 shadow-md">
               {/* Circle Icon */}
@@ -148,12 +148,12 @@ export function FloatMeWay() {
 
               {/* Content */}
               <h3 className="mb-2 text-center text-xl font-semibold">
-                Get funds as quick
+              Receive funds as quick
                 <br />
                 as the same day
               </h3>
               <p className="mt-auto pt-4 text-center text-amber-600">
-                Once all relevant information
+                Once all necessary  information
                 <br />
                 is provided
               </p>

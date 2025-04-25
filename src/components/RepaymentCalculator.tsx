@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './RepaymentCalculator.css';
-import Calculator from "./assets/Calculator.avif"
+import Calculator from "./assets/Calculator.webp"
+import { Link } from 'react-router-dom';
 
 export function RepaymentCalculator() {
   const [loanAmount, setLoanAmount] = useState<number>(30000);
@@ -102,7 +103,7 @@ export function RepaymentCalculator() {
               and support, but now there's one more thing.
             </p>
             <p className="text-lg mb-6">
-              A <span className="text-gray-600 font-medium">loan repayment calculator</span> that will help you 
+              A loan repayment calculator that will help you 
               work out <span className="text-gray-600 font-medium">how your payments will fit</span> into your 
               monthly expenses!
             </p>
@@ -118,8 +119,8 @@ export function RepaymentCalculator() {
             </div>
           </div>
 
-          <div className="calculator-form">
-            <div className="calculator-card bg-white rounded-2xl shadow-xl p-8">
+          <div className="calculator-form grayscale">
+            <div className="calculator-card bg-white rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.3)] p-8">
               <div className="calculator-header mb-8">
                 <h3 className="text-xl md:text-2xl text-black font-medium mb-2">
                   Get an estimate of<br />your repayments
@@ -221,9 +222,11 @@ export function RepaymentCalculator() {
                 <div className="repayment-amount text-4xl font-bold text-gray-600 mb-6">
                   $ {monthlyRepayment.toFixed(2)}
                 </div>
+                <Link to="/apply-now">
                 <button className="apply-btn w-full py-4 bg-gray-500 hover:bg-gray-600 text-white rounded-md transition duration-300 font-medium">
                   Apply Now
                 </button>
+                </Link>
               </div>
               
               <div className="disclaimer text-xs text-gray-500 mt-4">
