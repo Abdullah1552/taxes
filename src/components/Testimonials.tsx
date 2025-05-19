@@ -125,7 +125,7 @@ export function Testimonials() {
 
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <p className="text-lg">
-            Intrigued? You should be. It's time to fast forward your finances with Float Me, a local
+            Intrigued? You should be. It's time to fast forward your finances, a local
             Australian-based company that helps people just like you take control of their money.
             See how we've helped our clients live happier lives by providing easy access, flexible,
             fair, and transparent financing options!
